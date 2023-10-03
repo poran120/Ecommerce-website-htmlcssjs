@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Website With HTML CSS JavaScript</title>
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!-- Font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="header"
+      class="flex content-center justify-between drop-shadow-xl"
+    >
+      <div class="nav-logo">
+        <img src="images/logo.png" />
+      </div>
+      <div class="">
+        <ul id="nav-items" class="flex content-center justify-center">
+          <li class="relative"><a class="active" href="index.html">Home</a></li>
+          <li class="relative"><a href="shop.html">Shop</a></li>
+          <li class="relative"><a href="blog.html">Blog</a></li>
+          <li class="relative"><a href="about.html">About</a></li>
+          <li class="relative"><a href="contact.html">Contact</a></li>
+          <li class="relative">
+            <a href="cart.html"></a><i class="fa-solid fa-bag-shopping"></i>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
